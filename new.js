@@ -30,17 +30,5 @@ toggleButton.addEventListener('click', () => {
     }
 });
 
-// Handle form submission
-const formElement = document.getElementById('forms');
-formElement.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
-
-    const formData = new FormData(formElement);
-    const formValues = Object.fromEntries(formData.entries());
-
-    console.log('Form Submitted:', formValues);
-
-    // Example: Display submitted data dynamically
-    const resultElement = document.getElementById('formResult');
-    resultElement.textContent = `Submitted Data: ${JSON.stringify(formValues)}`;
-});
+// Change the background color of the body when a button is clicked
+const colorButton = document.getElementById('colorButton');
